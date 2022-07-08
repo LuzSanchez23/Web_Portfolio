@@ -1,0 +1,177 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*Navigation Bar Menu*/
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    font-family: sans-serif;
+    transition: all 0.4s ease;
+}
+nav.sticky {
+    padding: 13px 0;
+    background: #66ced6;
+}
+
+nav .navbar {
+    width: 90%;
+    margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+}
+nav .navbar .logo a{
+    font-size: 40px;
+    font-weight: 500;
+    color: #66ced6;
+}
+nav.sticky .navbar .logo a {
+    color: pink;
+}
+nav .navbar .menu {
+    display: flex;
+}
+nav .navbar .menu li {
+    margin: 0 8px;
+    list-style: none;
+}
+.navbar .menu li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #66ced6;
+    transform: all 0.3s easy;
+}
+.navbar .menu li a:hover {
+    color: pink;
+}
+nav.sticky .navbar .menu li a {
+    color: #FFF;
+}
+nav.sticky .navbar .menu li a:hover {
+    color: pink;
+}
+.navbar .media-icons a{
+    font-size: 18px;
+    margin: 0 6px;
+    color: #66ced6;
+}
+nav.sticky .navbar .media-icons a {
+    color: #FFF;
+}
+/* Side Nav Menu Btns*/
+nav .menu-btn, .navbar .cancel-btn {
+    position: absolute;
+    color: #FFF;
+    font-size: 20px;
+    right: 30px;
+    top: 20px;
+    display: none;
+}
+nav .menu-btn{
+    color: #66ced6;
+}
+
+/*--Home Section--*/
+.home {
+    height: 100vh;
+    width: 100%;
+    background: url("img/PinkdesK.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    
+}
+.home .home-content {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home .text .text-one {
+    font-size: 25px;
+}
+.home .text .text-two {
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: -3px;
+}
+.home .text .text-three {
+    font-size: 45px;
+}
+.home .text .text-four {
+    font-size: 23px;
+    margin: 5px 0;
+}
+
+/*--About Me Section--*/
+.about-me .about-me-details .right img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/*Reponsive Media Query*/
+@media (max-width: 750px) {
+    nav .navbar .menu {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        background: #0E2431;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        transition: all 0.5s ease;
+    }
+    nav .navbar.active .menu {
+        left: 0;
+    }
+    .navbar .menu li a{
+        display: block;
+        margin: 10px 0;
+        font-size: 23px;
+        color: #FFF
+    }
+    .navbar .media-icons a{
+        display: none;
+    }
+    nav .menu-btn, .navbar .cancel-btn {
+        display: block;
+    }
+    .home .text .text-two {
+        font-size: 65px;
+    }
+    .home .text .text-three {
+        font-size: 35px;
+    }
+}
+/*--Cellphone Size--*/
+@media (max-width: 510px) {
+    .home .text .text-two {
+        font-size: 55px;
+    }
+    .home .text .text-three {
+        font-size: 33px;
+    }
+}
