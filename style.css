@@ -124,23 +124,24 @@ nav.sticky .menu-btn{
 
 /*Same elements in all sections*/
 section {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 section .content {
     width: 80%;
-    margin: 40px auto;
+    margin: 20px auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 section .title {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+   
 }
 section .title span {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     position: relative;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
 }
 section .topic {
     font-size: 25px;
@@ -206,13 +207,6 @@ section .topic {
     font-size: 80px;
     font-weight: 500;
 }
-/*puede ser esta o la de abajo - .skills-details .left .experience .exp*/
-.skills-details .experience .exp {
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0 6px;
-    margin-left: 20px;
-}
 
  .skills-details .boxes {
     width: 45%;
@@ -241,7 +235,7 @@ section .topic {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .projects .boxes .box{
+  .projects .boxes .box {
     margin: 20px 0;
     width: calc(100% / 3 - 20px);
     text-align: center;
@@ -250,40 +244,47 @@ section .topic {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
     cursor: default;
     transition: all 0.4s ease;
+    background-color: #CC9999;
   }
   .projects .boxes .box:hover{
-    background: #4070f4;
-    color: #fff;
+    background: #fff;
+    color: #CC9999;
+    box-shadow: 0 5px 10px #CC9999;
   }
-  .projects .boxes .box .icon{
-    height: 50px;
-    width: 50px;
-    background: #4070f4;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 18px;
-    color: #fff;
-    margin: 0 auto 10px auto;
-    transition: all 0.4s ease;
-  }
-  .boxes .box:hover .icon{
-    background-color: #fff;
-    color: #4070f4;
-  }
+ 
   .projects .boxes .box:hover .topic,
   .projects .boxes .box:hover p{
-    color: #0E2431;
+    color: #CC9999;
     transition: all 0.4s ease;
+   
   }
-  .projects .boxes .box:hover .topic,
-  .projects .boxes .box:hover p{
+ 
+  .card img {
+    height: 20%;
+  }
+  .projects .button {
+    background-color: #CC9999;
+    border: 2px #fff solid;
     color: #fff;
-  }
+    font-size: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
+.projects .button a {
+    color: #fff;
+}
+.projects .button:hover {
+    background-color: blue;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+  
 
 /*--Contact Me Section--*/
   .contact-me{
-    background: #F0F8FF;
+    background: #CC9999;
   }
   .contact-me .content{
     margin: 0 auto;
@@ -328,7 +329,7 @@ form .submit:hover {
   
   /* Footer CSS */
   footer{
-    background: #CC9999;
+    background: #fff;
     padding: 15px 0;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -336,7 +337,7 @@ form .submit:hover {
   footer .text {
     font-size: 12px;
     font-weight: 300;
-    color: #fff;
+    color: #CC9999;
   }
   footer .text .signature {
     font-size: 20px;
@@ -349,7 +350,8 @@ form .submit:hover {
     bottom: 20px;
     right: 20px;
     color: #fff;
-    background: #4070f4;
+    border: 2px solid white;
+    background: #CC9999;
     padding: 10px 12px;
     font-size: 18px;
     border-radius: 6px;
