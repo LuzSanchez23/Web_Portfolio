@@ -294,6 +294,37 @@ section .topic {
     text-align: center;
     margin: auto;
   }
+/*--Contact Me Section--//Form--*/
+form input {
+    width: 60%;
+    height: 40px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px #CC9999 solid;
+    border-radius: 10px;
+    /*I can add a color to the text when they type once I decide the correct colors */
+}
+form textarea {
+width: 60%;
+height: 200px;
+border: 2px #CC9999 solid;
+border-radius: 8px;
+}
+form .submit {
+    background-color: #CC9999;
+    border: 2px #fff solid;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 30px;
+    width: 20%;
+}
+form .submit:hover {
+    background-color: #CC9999;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
   
   /* Footer CSS */
   footer{
@@ -306,6 +337,10 @@ section .topic {
     font-size: 12px;
     font-weight: 300;
     color: #fff;
+  }
+  footer .text .signature {
+    font-size: 20px;
+    font-family: cursive;
   }
  
   /* Scroll TO Top Button CSS */
