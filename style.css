@@ -15,77 +15,87 @@ nav {
     transition: all 0.4s ease;
     z-index: 998;
 }
-nav.sticky {
-    padding: 13px 0;
-    background: #CC9999; /*rosegold color*/
-}
-
 nav .navbar {
-    width: 90%;
-    margin: auto;
+   width: 90%;
+   margin: auto; 
    display: flex;
    align-items: center;
    justify-content: space-between; 
+   background: #CC9999
 }
-nav .navbar .logo a{
+ nav .navbar .logo a{
     font-size: 40px;
     font-weight: 500;
-    color: #66ced6;
-}
-nav.sticky .navbar .logo a {
-    color: rgb(62, 58, 58);
+    color: #595d5d;;
 }
 nav .navbar .menu {
     display: flex;
     position: relative;
 }
-nav .navbar .menu li {
+ nav .navbar .menu li {
     margin: 0 8px;
-    list-style: none;
+    list-style: none;   
 }
 .navbar .menu a{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
-    color: #66ced6;
+    color: #fff;
     transform: all 0.3s easy;
-    padding: 6px 0;
+    padding: 5px 0;
+}
+.navbar .media-icons a{
+    font-size: 18px;
+    margin: 0 6px;
+    color: #595d5d;
 }
 .navbar .menu li a:hover {
     color: pink;
+    text-decoration: none;
+    text-transform: uppercase;
 }
+
+/*Sticky Nav*/
+nav.sticky {
+    padding: 13px 0;
+    background: #CC9999; /*rosegold color*/
+    border: solid 3px #fff;
+} 
+nav.sticky .navbar .logo a {
+    color: rgb(62, 58, 58);
+ }
 nav.sticky .navbar .menu li a {
     color: #FFF;
 }
 nav.sticky .navbar .menu li a:hover {
     color: pink;
 }
-.navbar .media-icons a{
-    font-size: 18px;
-    margin: 0 6px;
-    color: #66ced6;
-}
 nav.sticky .navbar .media-icons a {
     color: #FFF;
 }
 /* Side Nav Menu Btns*/
-nav .menu-btn .navbar .menu .cancel-btn {
+
+nav .menu-btn,
+ .navbar .cancel-btn {
     position: absolute;
-    color: #FFF;
+    color: rgba(225, 13, 13, 0.872);
     font-size: 20px;
     right: 30px;
     top: 20px;
+     
     display: none;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
 }
+ 
 nav .menu-btn{
     color: black;
 }
+
 nav.sticky .menu-btn{
     color: black;
   }
   .navbar .menu .menu-btn{
     color: black;
-  }
+  } 
 
 /*--Home Section--*/
 .home {
@@ -408,7 +418,7 @@ form .submit:hover {
 
 
 /*Reponsive Media Query*/
-@media (max-width: 1190px) {
+ @media (max-width: 1190px) {
     section .content {
         width: 90%;
     }
@@ -439,11 +449,11 @@ form .submit:hover {
     .projects .boxes .box{
         width: calc(100% / 2 - 20px);
     }
-}
+} 
 @media (max-width: 750px) {
     nav .navbar .menu {
         position: absolute;
-        left: 100%;
+        left: -100%;
         top: 0;
         height: 100vh;
         max-width: 400px;
@@ -457,20 +467,24 @@ form .submit:hover {
     nav .navbar.active .menu {
         left: 0;
     }
+   
     .navbar .menu li a{
         display: block;
         margin: 10px 0;
         font-size: 23px;
         color: #FFF
     }
+    .navbar .media-icons a {
+        display: none;
+    }
+    
     nav.sticky .navbar .menu li a:hover {
         color: pink;
 
     }
-    .navbar .media-icons a{
-        display: none;
-    }
-    nav .menu-btn, .navbar .cancel-btn {
+    
+    
+  nav .menu-btn, .navbar .cancel-btn {
         display: block;
     }
     .home .text .text-two {
@@ -497,7 +511,7 @@ form .submit:hover {
     .contact-me .text{
         width: 100%;
       }
-}
+} 
 /*--Cellphone Size--*/
 @media (max-width: 510px) {
     .home .text .text-two {
