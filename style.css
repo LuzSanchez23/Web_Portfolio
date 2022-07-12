@@ -272,7 +272,7 @@ section .topic {
     flex-wrap: wrap;
 }
  .skills-details .box {
-    width: calc(100% / 2 - 20px);
+    width: calc(100% / 4 - 20px);
     margin: 20px 0;
 }
 .skills-details .boxes .topic {
@@ -280,11 +280,7 @@ section .topic {
     font-weight: 500 ;
     color: #FFF;
 }
-.skills-details .boxes .box .num {
-    font-size: 50px;
-    font-weight: 500 ;
-   color: #FFF;
-}
+
 
 /*--My projects Section--*/
 .projects .boxes{
