@@ -1,5 +1,5 @@
 /*Google Font*/
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Cookie&family=Fredoka+One&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ nav {
     position: fixed;
     width: 100%;
     padding: 20px 0;
-    font-family: sans-serif;
+    font-family: Fredoka+One;
     transition: all 0.4s ease;
     z-index: 998;
 }
@@ -21,12 +21,14 @@ nav .navbar {
    display: flex;
    align-items: center;
    justify-content: space-between; 
-   background: #CC9999
+   background: #595d5d;
 }
  nav .navbar .logo a{
     font-size: 40px;
     font-weight: 500;
-    color: #595d5d;;
+    color: #CC9999;
+    font-family: 'Cookie', cursive;
+    text-decoration: none;
 }
 nav .navbar .menu {
     display: flex;
@@ -46,12 +48,18 @@ nav .navbar .menu {
 .navbar .media-icons a{
     font-size: 18px;
     margin: 0 6px;
-    color: #595d5d;
+    color: #CC9999;
+}
+nav .navbar .logo a:hover {
+    color: #fff;
 }
 .navbar .menu li a:hover {
     color: pink;
     text-decoration: none;
     text-transform: uppercase;
+}
+.navbar .media-icons a:hover {
+    font-size: 30px;
 }
 
 /*Sticky Nav*/
@@ -81,7 +89,6 @@ nav .menu-btn,
     font-size: 20px;
     right: 30px;
     top: 20px;
-     
     display: none;
     transition: all 0.3s ease;
 }
@@ -117,15 +124,18 @@ nav.sticky .menu-btn{
     justify-content: center;
 }
 .home .text .text-one {
-    font-size: 25px;
+    font-size: 55px;
+    font-family: 'Cookie', cursive;
 }
 .home .text .text-two {
     font-size: 75px;
     font-weight: 500;
     margin-left: -3px;
+    
 }
 .home .text .text-three {
     font-size: 35px;
+   
 }
 
 /*-- animation home text--*/
@@ -137,12 +147,14 @@ nav.sticky .menu-btn{
     color: #fff;
     font-size: 45px;
     font-weight: 400;
+    font-family: 'Fredoka One', cursive;
   }
   .wrapper .dynamic-txts{
     margin-left: 15px;
     height: 70px;
     line-height: 20px;
     overflow: hidden;
+    font-family: 'Fredoka One', cursive;
   }
   .dynamic-txts li{
     list-style: none;
@@ -186,16 +198,22 @@ section {
 section .content {
     width: 80%;
     margin: 20px auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+     font-family: Fredoka+One;
 }
 section .title {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    font-family: 'Concert One', cursive;
    
 }
+section .title:hover {
+    animation: rubberBand;
+    animation-duration: 2s;
+    cursor: pointer;
+}
 section .title span {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 600;
     position: relative;
     padding-bottom: 5px;
@@ -204,9 +222,16 @@ section .topic {
     font-size: 25px;
     font-weight: 500;
     color: pink;
-    margin-bottom: 10px;
+    font-family: 'Concert One', cursive;
 }
-
+section .topic:hover {
+    font-size: 30px;
+}
+section  .languages {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #595d5d;
+}
 /*--About Me Section--*/
 .about-me .about-me-details{
     display: flex;
@@ -225,13 +250,15 @@ section .topic {
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 12px;
 }
 .about-me .about-me-details .left {
     width: 55%;
 }
 .about-me-details .left p {
- text-align: justify;   
+ text-align: justify; 
+ font-family: 'Concert One', cursive;
+font-size: 17px;
+color: #595d5d;
 }
 
 
@@ -252,19 +279,10 @@ section .topic {
 }
 .skills-details .left p {
     text-align: justify;
+    font-family: 'Concert One', cursive;
+    font-size: 17px;
+    color: #595d5d;
 }
-/*puede ser esta o la de abajo - .skills .skills-details .experience*/
-.skills-details .left .experience {
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
-}
-/*puede ser esta o la de abajo - .skills-details .left .experience .num*/
-.skills-details .experience .num {
-    font-size: 80px;
-    font-weight: 500;
-}
-
  .skills-details .boxes {
     width: 45%;
     display: flex;
@@ -278,7 +296,16 @@ section .topic {
 .skills-details .boxes .topic {
     font-size: 20px;
     font-weight: 500 ;
-    color: #FFF;
+    color: #595d5d;
+   
+}
+.skills-details .boxes .topic i {
+   color: #fff;
+   font-size: 80px;
+}
+.skills-details .boxes .topic i:hover{
+    color: #595d5d;
+    cursor:pointer;
 }
 
 
@@ -309,11 +336,12 @@ section .topic {
   .projects .boxes .box:hover p{
     color: #CC9999;
     transition: all 0.4s ease;
-   
   }
- 
+  .projects .boxes .box p {
+    font-family: 'Concert One', cursive;
+  }
   .card img {
-    height: 20%;
+    height: 20vh;
   }
   .projects .button {
     background-color: #CC9999;
@@ -325,15 +353,16 @@ section .topic {
 }
 .projects .button a {
     color: #fff;
+    text-decoration: none;
 }
-.projects .button:hover {
-    background-color: blue;
+.projects .button a:hover {
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: grab;
 }
-
-  
 
 /*--Contact Me Section--*/
   .contact-me{
@@ -373,11 +402,11 @@ form .submit {
     width: 20%;
 }
 form .submit:hover {
-    background-color: #CC9999;
     border: none;
-    color: #fff;
-    font-size: 20px;
+    color: #595d5d;
+    font-size: 30px;
     cursor: pointer;
+    font-family: 'Cookie', cursive;
 }
   
   /* Footer CSS */
@@ -393,8 +422,8 @@ form .submit:hover {
     color: #CC9999;
   }
   footer .text .signature {
-    font-size: 20px;
-    font-family: cursive;
+    font-size: 30px;
+    font-family: 'Cookie', cursive;
   }
  
   /* Scroll TO Top Button CSS */
@@ -408,8 +437,10 @@ form .submit:hover {
     padding: 10px 12px;
     font-size: 18px;
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.15);
-    
+  }
+  .scroll-btn i:hover {
+    background: #595d5d;
+    cursor: grab;
   }
 
 
